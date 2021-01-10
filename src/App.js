@@ -10,19 +10,23 @@ function App() {
     setKm(e.target.value) 
   }
   const solved = () => {
-    convert(km)
-    console.log(convert(km))
+    return convert(km)
   }
   return (
-    <form className="main"  onSubmit={(e)=> e.preventDefault()} >
+    <div className='main'>
+    <form className="form"  onSubmit={(e)=> e.preventDefault()} >
       <input
+      className='input'
         type="text"
         value={km}
         onChange={handleChange}
       />
-      <button>Convert</button> <br /><br />
-      <h4> {solved()} </h4>
+
+      {/* <button>Convert</button> <br /><br /> */}
+      
+      <h2><small>{km}km </small>is <span>{solved()}</span> miles/hr </h2>
     </form>
+    </div>
   );
 }
 
