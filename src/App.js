@@ -14,18 +14,17 @@ function App() {
   }
   return (
     <div className='main'>
-    <form className="form"  onSubmit={(e)=> e.preventDefault()} >
-      <input
-      className='input'
-        type="text"
-        value={km}
-        onChange={handleChange}
-      />
-
-      {/* <button>Convert</button> <br /><br /> */}
-      
+      <h1>Kilometer(Km) to miles per hour converter</h1>
+      <form className="form"  onSubmit={(e)=> e.preventDefault()} >
+        <input
+        className='input'
+          value={km}
+          onChange={handleChange}
+          placeholder='Enter a number'
+        />
+        {/* <button>Convert</button> <br /><br /> */}
+      </form>
       <h2><small>{km}km </small>is <span>{solved()}</span> miles/hr </h2>
-    </form>
     </div>
   );
 }

@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #E7E6DD;
 }
 
 code {
@@ -16,17 +17,20 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-}
-
-.input{
-  margin: 1rem;
-}
-
-.form{
-  display: flex;
   flex-direction: column;
 }
+
+.form, h1{
+  min-height: 20vh;
+}
+.input{
+  margin: 1rem;
+  padding: .50rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 small{
   color: red
 }
